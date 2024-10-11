@@ -3,6 +3,38 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
+    <div className="dashboard">
+      <h1>Bienvenido a Banca Estebanquito</h1>
+      <div className="accounts-summary">
+        <h2>Tus cuentas</h2>
+        <p>Saldo total: $X,XXX.XX</p>
+      </div>
+      <div className="actions">
+        <a href="/transaction">
+          <button>Ver Transacciones</button>
+        </a>
+        <a href="/loans">
+          <button>Solicitar Préstamo</button>
+        </a>
+        <a href="/reports"> 
+          <button>Ver Reportes Financieros</button>
+        </a>
+        <a href="/login">
+          <button>Iniciar Sesión</button>
+        </a>
+        <a href="/register">
+          <button>Registrarse</button>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+/* 
+Default page by Next.js
+
+export default function Home() {
+  return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
@@ -92,4 +124,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+}*/
